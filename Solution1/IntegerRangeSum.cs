@@ -1,11 +1,11 @@
 namespace Solution1;
 
-public class IntegerRangeSum
+public static class IntegerRangeSum
 {
-    public void Sum(int index)
+    public static int Sum(int index)
     {
-        int k = 0;
-        int sum = 0;
+        var k = 0;
+        var sum = 0;
         
         while (k < index)
         {
@@ -13,6 +13,7 @@ public class IntegerRangeSum
             sum = sum + k;
         }
         
-        Console.WriteLine(sum);
+        return sum;
+        
     }
 }

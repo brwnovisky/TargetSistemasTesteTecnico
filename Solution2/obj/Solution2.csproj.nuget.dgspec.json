@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj": {}
+    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj": {}
   },
   "projects": {
-    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj": {
+    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj",
-        "projectName": "Solution1",
-        "projectPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj",
+        "projectUniqueName": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj",
+        "projectName": "Solution2",
+        "projectPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj",
         "packagesPath": "/home/bruno/.nuget/packages/",
-        "outputPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/",
+        "outputPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/bruno/.nuget/NuGet/NuGet.Config"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/254/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

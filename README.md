@@ -22,6 +22,8 @@ Solução: [Solution1](Solution1).
 
 IMPORTANTE: Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
 
+Solução: [Solution2](Solution2).
+
 ---
 
 3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que desejar, que calcule e retorne:

@@ -1,7 +1,8 @@
 ﻿using Solution1;
 
-var adder = new IntegerRangeSum();
+var sum = IntegerRangeSum.Sum(13);
 
-adder.Sum(13);
+Console.WriteLine(sum);
 
 // The output must be "91";
+
