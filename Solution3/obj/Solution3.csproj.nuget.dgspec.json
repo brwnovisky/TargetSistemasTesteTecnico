@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj": {}
+    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution3/Solution3.csproj": {}
   },
   "projects": {
-    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj": {
+    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution3/Solution3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj",
-        "projectName": "Solution2",
-        "projectPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/Solution2.csproj",
+        "projectUniqueName": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution3/Solution3.csproj",
+        "projectName": "Solution3",
+        "projectPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution3/Solution3.csproj",
         "packagesPath": "/home/bruno/.nuget/packages/",
-        "outputPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution2/obj/",
+        "outputPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/bruno/.nuget/NuGet/NuGet.Config"

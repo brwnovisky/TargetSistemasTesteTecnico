@@ -1,8 +1,6 @@
 
 # Target Sistemas Teste Técnico
 
----
-
 **Este repositório contem soluções para os items do teste técnico proposto pela 
 [Target 
 Sistemas](https://targetsistemas.com.br/).**
