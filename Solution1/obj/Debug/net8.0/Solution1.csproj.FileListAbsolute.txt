@@ -1,0 +1,15 @@
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/bin/Debug/net8.0/Solution1
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/bin/Debug/net8.0/Solution1.deps.json
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/bin/Debug/net8.0/Solution1.runtimeconfig.json
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/bin/Debug/net8.0/Solution1.dll
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/bin/Debug/net8.0/Solution1.pdb
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.GeneratedMSBuildEditorConfig.editorconfig
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.AssemblyInfoInputs.cache
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.AssemblyInfo.cs
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.csproj.CoreCompileInputs.cache
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.sourcelink.json
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.dll
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/refint/Solution1.dll
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.pdb
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/Solution1.genruntimeconfig.cache
+/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/Debug/net8.0/ref/Solution1.dll
