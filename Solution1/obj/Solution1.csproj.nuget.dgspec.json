@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj": {}
+    "C:\\Users\\Administrator\\RiderProjects\\TargetSistemasTesteTecnico\\Solution1\\Solution1.csproj": {}
   },
   "projects": {
-    "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj": {
+    "C:\\Users\\Administrator\\RiderProjects\\TargetSistemasTesteTecnico\\Solution1\\Solution1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\RiderProjects\\TargetSistemasTesteTecnico\\Solution1\\Solution1.csproj",
         "projectName": "Solution1",
-        "projectPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/Solution1.csproj",
-        "packagesPath": "/home/bruno/.nuget/packages/",
-        "outputPath": "/home/bruno/Desktop/DesafioTaregetSistemas/TargetSistemasTesteTecnico/Solution1/obj/",
+        "projectPath": "C:\\Users\\Administrator\\RiderProjects\\TargetSistemasTesteTecnico\\Solution1\\Solution1.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\RiderProjects\\TargetSistemasTesteTecnico\\Solution1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bruno/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Administrator\\.dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,11 @@
+﻿{
+    "Year" : 2025,
+    "Month" : 1,
+    "DailyBillings" : [
+      { "Day": 1, "Value": 200.50 },
+      { "Day": 2, "Value": null },
+      { "Day": 3, "Value": 0 },
+      { "Day": 4, "Value": 450.75 },
+      { "Day": 5, "Value": 300.00 }
+    ]
+}
