@@ -53,7 +53,6 @@ b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Est
 
 Solução: [Solution3](Solution3) (execute esta solução conforme a [exceção](#exceção-para-a-solution3)).
 
-
 ### Desafio 4
 
 Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
