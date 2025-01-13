@@ -20,8 +20,6 @@ Quanto a [Solution3](Solution3), para executar o teste é necessário executar:
 dotnet run ./Data/dados.json ./Data/dados2.xml
 ```` 
 
-Também, claro, podendo ser fornecido outro caminho para um arquivo '.json' de mesma natureza.
-
 ## Desafios
 
 ### Desafio 1
