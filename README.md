@@ -20,8 +20,6 @@ Quanto a [Solution3](Solution3), para executar o teste é necessário executar:
 dotnet run ./Data/dados.json ./Data/dados2.xml
 ```` 
 
-Também, claro, podendo ser fornecido outro caminho para um arquivo '.json' de mesma natureza.
-
 ## Desafios
 
 ### Desafio 1
@@ -78,6 +76,4 @@ b) Evite usar funções prontas, como, por exemplo, reverse;
 Solução: [Solution5](Solution5).
 
 ### Observações Finais
-Este projeto é parte de um desafio técnico para contratação, não sendo portanto, de código aberto. Toda a propriedade intelectual contida neste teste pertence a [Target Sistemas](https://targetsistemas.com.br/);.
-
----
+Este projeto é parte de um desafio técnico para contratação, não sendo portanto, de código aberto. Toda a propriedade intelectual contida neste teste pertence a [Target Sistemas](https://targetsistemas.com.br/).
