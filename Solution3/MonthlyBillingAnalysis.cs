@@ -57,6 +57,7 @@ public partial class MonthlyBillingAnalysis
                     _dailyBillings = root.DailyBillings;
                 }
                 break;
+            
             default:
                 throw new ArgumentException("Invalid data file format.");
         }
