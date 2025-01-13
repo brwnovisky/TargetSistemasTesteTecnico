@@ -50,6 +50,12 @@
 # CMake
 cmake-build-*/
 
+# bin
+bin
+
+# obj
+obj
+
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
