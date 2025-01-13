@@ -17,8 +17,9 @@ dotnet run
 
 Quanto a [Solution3](Solution3), para executar o teste é necessário executar:
 ```sh
-dotnet run Test/monthDataMock.json
+dotnet run ./Data/dados.json ./Data/dados2.xml
 ```` 
+
 Também, claro, podendo ser fornecido outro caminho para um arquivo '.json' de mesma natureza.
 
 ## Desafios

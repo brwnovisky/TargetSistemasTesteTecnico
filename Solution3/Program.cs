@@ -1,11 +1,12 @@
 ﻿using Solution3;
 
-MonthlyBillingAnalysis monthAnalysis;
+MonthlyBillingAnalysis jsonDataAnalysis;
+MonthlyBillingAnalysis xmlDataAnalysis;
 
 try
 {
-    var jsonRawData = File.ReadAllText(args.ElementAt(0));
-    monthAnalysis = new MonthlyBillingAnalysis(jsonRawData);
+    jsonDataAnalysis = new MonthlyBillingAnalysis(args.ElementAt(0));
+    xmlDataAnalysis = new MonthlyBillingAnalysis(args.ElementAt(1));
 }
 catch (Exception ex)
 {
@@ -13,23 +14,21 @@ catch (Exception ex)
     return;
 }
 
-var currentDataYear = monthAnalysis.GetYearDate();
-var currentDataMonth = monthAnalysis.GetMonthDate();
-var lowestDailyValueData = monthAnalysis.LowestDailyValueData();
-var highestDailyValueData = monthAnalysis.HighestDailyValueData();
-var daysGreaterThanAverage = monthAnalysis.DaysGreaterThanAverage();
+var jsonLowestDailyValueData = jsonDataAnalysis.LowestDailyValueData();
+var jsonHighestDailyValueData = jsonDataAnalysis.HighestDailyValueData();
+var jsonDaysGreaterThanAverage = jsonDataAnalysis.DaysGreaterThanAverage();
 
-var monthZero = currentDataMonth < 10 ? "0" : "";
-var dayZero = lowestDailyValueData.Day < 10 ? "0" : "";
-var dateString = $"{currentDataYear}-{monthZero}{currentDataMonth}-{dayZero}{lowestDailyValueData.Day}";
+var xmlLowestDailyValueData = xmlDataAnalysis.LowestDailyValueData();
+var xmlHighestDailyValueData = xmlDataAnalysis.HighestDailyValueData();
+var xmlDaysGreaterThanAverage = xmlDataAnalysis.DaysGreaterThanAverage();
 
-Console.WriteLine($"The lowest monthly billing value is R${lowestDailyValueData.Value} in {dateString}.");
+Console.WriteLine("* On dados.json *");
+Console.WriteLine($"The lowest monthly billing value is R${jsonLowestDailyValueData.Value} on day {jsonLowestDailyValueData.Day}.");
+Console.WriteLine($"The highest monthly billing value is R${jsonHighestDailyValueData.Value} on day {jsonHighestDailyValueData.Day}.");
+Console.WriteLine($"The number of days whose value are above the average is {jsonDaysGreaterThanAverage}.");
+Console.WriteLine();
 
-dayZero = highestDailyValueData.Day < 10 ? "0" : "";
-dateString = $"{currentDataYear}-{monthZero}{currentDataMonth}-{dayZero}{highestDailyValueData.Day}";
-
-Console.WriteLine($"The highest monthly billing value is R${highestDailyValueData.Value} in {dateString}.");
-
-dateString = $"{currentDataYear}/{monthZero}{currentDataMonth}";
-
-Console.WriteLine($"The number of days whose value are above the average is {daysGreaterThanAverage} in {dateString}.");
+Console.WriteLine("* On dados2.xml *");
+Console.WriteLine($"The lowest monthly billing value is R${xmlLowestDailyValueData.Value} on day {xmlLowestDailyValueData.Day}.");
+Console.WriteLine($"The highest monthly billing value is R${xmlHighestDailyValueData.Value} on day {xmlHighestDailyValueData.Day}.");
+Console.WriteLine($"The number of days whose value are above the average is {xmlDaysGreaterThanAverage}.");

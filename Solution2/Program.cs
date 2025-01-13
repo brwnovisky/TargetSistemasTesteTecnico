@@ -17,7 +17,7 @@ if (FibonacciChecker.IsFibonacciNumber(number))
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine($"The number {number} is a fibonacci number.");
     Console.ResetColor();
-
+    
     return;
 }
 

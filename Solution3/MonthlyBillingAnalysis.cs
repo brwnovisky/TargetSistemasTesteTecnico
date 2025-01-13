@@ -1,26 +1,29 @@
-using System.Diagnostics;
+using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 using Newtonsoft.Json;
 using Solution3.models;
 
 namespace Solution3;
 
-public class MonthlyBillingAnalysis
+public partial class MonthlyBillingAnalysis
 {
-    private readonly MonthlyBillingData _monthlyBillingData;
+    [XmlRoot("root")]
+    public class Root
+    {
+        [XmlElement("row")]
+        public List<DailyBilling> DailyBillings { get; set; }
+    }
+    
     private readonly int _daysGreaterThanAverage;
     private readonly DailyBilling _lowestBillingDailyValue;
     private readonly DailyBilling _highestDailyBillingValue;
+    private List<DailyBilling>? _dailyBillings;
     
-    public MonthlyBillingAnalysis(string jsonRawData)
-    {
-        _monthlyBillingData = JsonConvert.DeserializeObject<MonthlyBillingData>(jsonRawData);
+    public MonthlyBillingAnalysis(string dataFilePath)
+    {   
+        FileProcess(dataFilePath);
         
-        if (_monthlyBillingData?.DailyBillings == null || _monthlyBillingData.DailyBillings.Count == 0)
-        {
-            throw new ArgumentException("Json data invalid.");
-        }
-        
-        var validBillingDays = _monthlyBillingData.DailyBillings.Where(b => b.Value is > 0).ToList();
+        var validBillingDays = _dailyBillings.Where(b => b.Value is > 0).ToList();
         
         _lowestBillingDailyValue = validBillingDays.OrderBy(d => d.Value).First();
         _highestDailyBillingValue = validBillingDays.OrderByDescending(d => d.Value).First();
@@ -28,6 +31,35 @@ public class MonthlyBillingAnalysis
         var averageDailyBillingValue = validBillingDays.Average(d => d.Value);
         
         _daysGreaterThanAverage = validBillingDays.Count(d => d.Value > averageDailyBillingValue);
+    }
+
+    private void FileProcess(string dataFilePath)
+    {
+        if (string.IsNullOrEmpty(dataFilePath)) throw new ArgumentException("Empty or invalid data file path.");
+
+        if (!File.Exists(dataFilePath)) throw new ArgumentException("Data file not found.");
+        
+        var rawData = File.ReadAllText(dataFilePath);
+        
+        var dataFileExtension = Path.GetExtension(dataFilePath).ToLower();
+
+        switch (dataFileExtension)
+        {
+            case ".json":
+                _dailyBillings = JsonConvert.DeserializeObject<List<DailyBilling>>(rawData);
+                break;
+            
+            case ".xml":
+                var serializer = new XmlSerializer(typeof(Root));
+                using (var reader = new StringReader(rawData))
+                {
+                    var root = (Root)serializer.Deserialize(reader)!;
+                    _dailyBillings = root.DailyBillings;
+                }
+                break;
+            default:
+                throw new ArgumentException("Invalid data file format.");
+        }
     }
 
     public DailyBilling LowestDailyValueData()
@@ -43,15 +75,5 @@ public class MonthlyBillingAnalysis
     public int DaysGreaterThanAverage()
     {
         return _daysGreaterThanAverage;
-    }
-
-    public int GetMonthDate()
-    {
-        return _monthlyBillingData.Month;
-    }
-
-    public int GetYearDate()
-    {
-        return _monthlyBillingData.Year;
     }
 }
