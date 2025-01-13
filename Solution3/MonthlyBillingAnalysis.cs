@@ -5,15 +5,8 @@ using Solution3.models;
 
 namespace Solution3;
 
-public partial class MonthlyBillingAnalysis
+public class MonthlyBillingAnalysis
 {
-    [XmlRoot("root")]
-    public class Root
-    {
-        [XmlElement("row")]
-        public List<DailyBilling> DailyBillings { get; set; }
-    }
-    
     private readonly int _daysGreaterThanAverage;
     private readonly DailyBilling _lowestBillingDailyValue;
     private readonly DailyBilling _highestDailyBillingValue;
@@ -58,8 +51,7 @@ public partial class MonthlyBillingAnalysis
                 }
                 break;
             
-            default:
-                throw new ArgumentException("Invalid data file format.");
+            default: throw new ArgumentException("Invalid data file format.");
         }
     }
 
@@ -76,5 +68,12 @@ public partial class MonthlyBillingAnalysis
     public int DaysGreaterThanAverage()
     {
         return _daysGreaterThanAverage;
+    }
+    
+    [XmlRoot("root")]
+    public class Root
+    {
+        [XmlElement("row")]
+        public List<DailyBilling> DailyBillings { get; set; }
     }
 }

@@ -9,14 +9,21 @@ O projeto visa atender os requisitos demandados pelo desafio técnico abaixo, pr
 
 ## Como Executar
 
-Abra o terminal do seu sistema operacional e acesse a pasta da solução (ex: Solution1) que queira e execute: 
+Abra o terminal do seu sistema operacional e acesse a pasta da solução (ex: Solution1). 
+
+Atualize as dependências da solução projeto executando:
 ```sh
+dotnet restore
+dotnet build
 dotnet run
 ```` 
+
 ### Exceção para a Solution3:
 
 Quanto a [Solution3](Solution3), para executar o teste é necessário executar:
 ```sh
+dotnet restore
+dotnet build
 dotnet run ./Data/dados.json ./Data/dados2.xml
 ```` 
 
