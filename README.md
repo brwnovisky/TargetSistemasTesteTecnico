@@ -75,5 +75,5 @@ b) Evite usar funções prontas, como, por exemplo, reverse;
 
 Solução: [Solution5](Solution5).
 
-# Observações Finais
+## Observações Finais
 Este projeto é parte de um desafio técnico para contratação, não sendo portanto, de código aberto. Toda a propriedade intelectual contida neste teste pertence a [Target Sistemas](https://targetsistemas.com.br/).
